@@ -1,0 +1,119 @@
+html {
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+* {
+  font-family: "Cairo", sans-serif;
+}
+
+/* // general rules  */
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .container {
+    width: 100%;
+    padding: 0px 10px;
+  }
+}
+.block {
+  margin: 100px 0;
+  padding: 100px 0;
+}
+
+.services {
+  background-color: #000000e0;
+  background-image: url("../images/2.jpeg");
+  background-blend-mode: overlay;
+  color: #fff;
+}
+.services .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.services__title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.services__desc {
+  margin-bottom: 1rem;
+}
+
+.services__box-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.services__box-container__box {
+  width: 350px;
+  padding: 20px 15px;
+  box-shadow: 0 0 10px #e8e8e821;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+}
+.services__box-container__box:hover {
+  transform: scale(1.05);
+}
+.services__box-container__box:hover img {
+  transform: rotate(10deg) scale(1.2);
+}
+.services__box-container h3 {
+  font-size: 1rem;
+}
+.services__box-container p {
+  font-size: 1rem;
+  text-align: center;
+}
+.services__box-container button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: rgb(22, 130, 223);
+  border: 1px solid transparent;
+  outline: none;
+  color: white;
+  border-radius: 6px;
+  min-width: 50%;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.services__box-container button:hover {
+  background-color: #fff;
+  border-color: rgb(22, 130, 223);
+  color: rgb(22, 130, 223);
+}
+
+.services__image-container {
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.services__image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+footer {
+  clear: both;
+}
